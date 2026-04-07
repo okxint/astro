@@ -1,5 +1,14 @@
 # @astrojs/cloudflare
 
+## 13.1.8
+
+### Patch Changes
+
+- [#16225](https://github.com/withastro/astro/pull/16225) [`756e7be`](https://github.com/withastro/astro/commit/756e7be510a315516f6aa1647c93d11e8b43f5a9) Thanks [@travisbreaks](https://github.com/travisbreaks)! - Fixes `ERR_MULTIPLE_CONSUMERS` error when using Cloudflare Queues with prerendered pages. The prerender worker config callback now excludes `queues.consumers` from the entry worker config, since the prerender worker only renders static HTML and should not register as a queue consumer. Queue producers (bindings) are preserved.
+
+- Updated dependencies []:
+  - @astrojs/underscore-redirects@1.0.3
+
 ## 13.1.7
 
 ### Patch Changes

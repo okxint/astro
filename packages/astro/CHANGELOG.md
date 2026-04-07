@@ -1,5 +1,11 @@
 # astro
 
+## 6.1.5
+
+### Patch Changes
+
+- [#16239](https://github.com/withastro/astro/pull/16239) [`7c65c04`](https://github.com/withastro/astro/commit/7c65c0495a12dcb86e6566223e398094566d1435) Thanks [@dataCenter430](https://github.com/dataCenter430)! - Fixes sync content inside `<Fragment>` not streaming to the browser until all async sibling expressions have resolved.
+
 ## 6.1.4
 
 ### Patch Changes
